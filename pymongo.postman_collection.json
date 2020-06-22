@@ -1,0 +1,253 @@
+{
+	"variables": [],
+	"info": {
+		"name": "pymongo",
+		"_postman_id": "78d564b3-e529-c2b8-1d6a-9b38bb8925fa",
+		"description": "pymongo assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"description": "",
+			"item": [
+				{
+					"name": "127.0.0.1:8080/",
+					"request": {
+						"url": "127.0.0.1:8080/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "jwt_token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InBpeXVzaCIsImV4cCI6MTU5MjgzMDMyNX0.gr4tikuB5SFjaJn6wqe-eJEG8qIYnazlobDnihZNEXo",
+								"description": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n\t\"username\":\"piyush\",\n\t\"password\":\"kd5\"\n\t\n}"
+						},
+						"description": "Login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "logout",
+			"description": "",
+			"item": [
+				{
+					"name": "127.0.0.1:8080/logout",
+					"request": {
+						"url": "127.0.0.1:8080/update",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "jwt_token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InBpeXVzaCIsImV4cCI6MTU5MjgzMTEyN30.FUwp0yUltd9oGqNx2ycJCFASp-TeRxmiSiIepiVhYDU",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"first_name\":\"Kanika\",\n\t\"last_name\":\"piyush\",\n\t\"username\":\"piyush\",\n\t\"password\":\"kd5\",\n\t\"contact_number\":9876543450,\n\t\"email_id\" : \"kanika@gmail.com\",\n\t\"user_id\":\"5eefd4dc58439b1996e36580\"\n}"
+						},
+						"description": "Logout. Enter token in header"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "update",
+			"description": "",
+			"item": [
+				{
+					"name": "127.0.0.1:8080/update",
+					"request": {
+						"url": "127.0.0.1:8080/update",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "jwt_token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InBpeXVzaCIsImV4cCI6MTU5MjgzMTEyN30.FUwp0yUltd9oGqNx2ycJCFASp-TeRxmiSiIepiVhYDU",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"first_name\":\"Kanika\",\n\t\"last_name\":\"piyush\",\n\t\"username\":\"piyush\",\n\t\"password\":\"kd5\",\n\t\"contact_number\":9876543450,\n\t\"email_id\" : \"kanika@gmail.com\",\n\t\"user_id\":\"5eefd4dc58439b1996e36580\"\n}"
+						},
+						"description": "Update"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "create",
+			"description": "",
+			"item": [
+				{
+					"name": "127.0.0.1:8080/create",
+					"request": {
+						"url": "127.0.0.1:8080/create",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "jwt_token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InBpeXVzaCIsImV4cCI6MTU5MjgzMDMyNX0.gr4tikuB5SFjaJn6wqe-eJEG8qIYnazlobDnihZNEXo",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"first_name\":\"Kanika\",\n\t\"last_name\":\"piyush\",\n\t\"username\":\"piyush\",\n\t\"password\":\"kd5\",\n\t\"contact_number\":9876543450,\n\t\"email_id\" : \"kanika@gmail.com\",\n\t\"user_id\":\"5eefd4dc58439b1996e36580\"\n}"
+						},
+						"description": "create"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8080/",
+			"request": {
+				"url": {
+					"raw": "127.0.0.1:8080/?user_id=5eefd4dc58439b1996e36580",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "5eefd4dc58439b1996e36580",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "jwt_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InBpeXVzaCIsImV4cCI6MTU5MjgzMDMyNX0.gr4tikuB5SFjaJn6wqe-eJEG8qIYnazlobDnihZNEXo",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"first_name\":\"Kanika\",\n\t\"last_name\":\"piyush\",\n\t\"username\":\"piyush\",\n\t\"password\":\"kd5\",\n\t\"contact_number\":9876543450,\n\t\"email_id\" : \"kanika@gmail.com\",\n\t\"user_id\":\"5eefd4dc58439b1996e36580\"\n}"
+				},
+				"description": "Fetch all. Use latest token in header."
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/?user_id=<user_id>",
+			"request": {
+				"url": {
+					"raw": "127.0.0.1:8080/?user_id=5eefd4dc58439b1996e36580",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "5eefd4dc58439b1996e36580",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "jwt_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InBpeXVzaCIsImV4cCI6MTU5MjgzMDMyNX0.gr4tikuB5SFjaJn6wqe-eJEG8qIYnazlobDnihZNEXo",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"first_name\":\"Kanika\",\n\t\"last_name\":\"piyush\",\n\t\"username\":\"piyush\",\n\t\"password\":\"kd5\",\n\t\"contact_number\":9876543450,\n\t\"email_id\" : \"kanika@gmail.com\",\n\t\"user_id\":\"5eefd4dc58439b1996e36580\"\n}"
+				},
+				"description": "Fetch one. Use latest token in header."
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080",
+			"request": {
+				"url": "127.0.0.1:8080",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "jwt_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InBpeXVzaCIsImV4cCI6MTU5MjgzMTEyN30.FUwp0yUltd9oGqNx2ycJCFASp-TeRxmiSiIepiVhYDU",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"first_name\":\"Kanika\",\n\t\"last_name\":\"piyush\",\n\t\"username\":\"piyush\",\n\t\"password\":\"kd5\",\n\t\"contact_number\":9876543450,\n\t\"email_id\" : \"kanika@gmail.com\",\n\t\"user_id\":\"5eefd4dc58439b1996e36580\"\n}"
+				},
+				"description": "Delete"
+			},
+			"response": []
+		}
+	]
+}
